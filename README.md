@@ -64,3 +64,9 @@ To get the latest changes
 To create new branch 
 
     git checkout -b <branchName>
+
+## What I have learnt so far...
+
+Installation and Initialization of Git, GitHub, Codespace, Python
+
+PEP 8 GuideLines, Shebang Line
