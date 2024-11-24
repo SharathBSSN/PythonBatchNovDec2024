@@ -1,1 +1,47 @@
 # PythonBatchNovDec2024
+
+This repository is developed to learn and understnd Python and its real-corporate level implementatins with the use of Git, GitHub and GitHub-Codespace.
+
+## Git Commands
+
+To make a clone of any given repo, ignore for codespace  [codespace allows to directly work on your given reposiory space]
+
+    git clone <url>
+
+To List all branches
+
+    git branch
+
+    git branch <branchName>  [Creates a new branch]
+
+To switch to or check out into anothe branch
+
+    git checkout <branchName>
+
+    git checkout -b <branchName>  [Creates a new branch and checks it out to current working direcory]
+
+To see modified files in local directory
+
+    git status
+
+To see changes made on file
+
+    git diff <fileName> [changed but not staged]
+
+    git diff --staged [staged but not commmited]
+
+To add/stage the changes
+
+    git add <fileName>
+
+To commit the changes
+
+    git commit -m "commit message"
+
+To push the commited changes
+
+    git push origin <sourceBranch>
+
+        Ex: Pushing changes from class01 -> mail
+        git push origin class01
+
