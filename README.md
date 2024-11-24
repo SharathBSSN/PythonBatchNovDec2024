@@ -45,3 +45,22 @@ To push the commited changes
         Ex: Pushing changes from class01 -> mail
         git push origin class01
 
+### Daily 
+
+These are the list of instructions or recommended practices that allows one to be on page with repo, identifying any uncommited changes.
+
+To check current working directory, bracnch
+
+    git status
+
+To check out to main branch
+
+    git checkout main
+
+To get the latest changes
+
+    git pull origin main
+
+To create new branch 
+
+    git checkout -b <branchName>
