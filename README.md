@@ -69,4 +69,17 @@ To create new branch
 
 Installation and Initialization of Git, GitHub, Codespace, Python
 
-PEP 8 GuideLines, Shebang Line
+Git commands, markdown(.md) syntax, daily activity and usage
+
+Intro to Python
+
+Class02
+
+    PEP 8 GuideLines,
+    Shebang Line,
+    Dynamic Typing,
+    Indentation and best parctices,
+    Print Syntax and Print Function,
+    Script vs Interactive mode
+    JupyterNotebooks (.ipynb) usage
+    ASCII and UNICODE
