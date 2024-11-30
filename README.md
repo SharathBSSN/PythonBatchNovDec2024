@@ -83,3 +83,19 @@ Class02
     Script vs Interactive mode
     JupyterNotebooks (.ipynb) usage
     ASCII and UNICODE
+
+Class03
+
+    Keywords, Indentifiers
+    Indentifier Casing
+    Comments, DocString
+    Semicolan Operators
+
+    Arthmetic Operations -> +,-,*,/,//,%,**
+    Arthmetic Functions  -> divmod(), pow()
+
+
+
+Class07
+
+    
