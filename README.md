@@ -108,4 +108,9 @@ Class05
     String Indexing
     String Sclicing 
 
+Class06
+
+    String Sclicing, String Reversal
+    String Attributes
+
     
