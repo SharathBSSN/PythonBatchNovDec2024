@@ -114,3 +114,6 @@ Class06
     String Attributes
 
     
+Class07
+
+    String Attributes
