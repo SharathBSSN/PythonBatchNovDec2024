@@ -39,7 +39,7 @@ Step 3: compare both with a condition and decide
 # HINT: ignore the whitespace and check
 
 
-inp_sentence = input("Enter any sentence:")
+inp_sentence = input("Enter any sentence:").lower()
 
 test_sentence = inp_sentence.replace(" ", "")
 
@@ -51,9 +51,6 @@ if test_sentence == reverse_sentance:
     print(inp_sentence, "is palindrome")
 else:
     print(inp_sentence, "is NOT a palindrome")    
-
-
-
 
 
 

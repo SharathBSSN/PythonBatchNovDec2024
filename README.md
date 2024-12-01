@@ -104,7 +104,7 @@ Class04
     
 Class05
 
-    String Operations - Basics, use of quotes
+    String Operations - Basics, use of quotes, len()
     String Indexing
     String Sclicing 
 
