@@ -98,4 +98,14 @@ Class03
 
 Class04
 
+    abs(), complex numbers
+    type conversion
+    operator precedence
+    
+Class05
+
+    String Operations - Basics, use of quotes
+    String Indexing
+    String Sclicing 
+
     
