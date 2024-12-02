@@ -117,3 +117,15 @@ Class06
 Class07
 
     String Attributes
+
+Class08
+
+    String Formatting: Old and New
+    f-strings, unicode strings
+
+Class09
+
+    Byte Operations, Usage of help()
+    pydoc
+    Relational Operations
+    Logical Operations
