@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module c_fruit_store</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">c_fruit_store</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/workspaces/PythonBatchNovDec2024/02_Basics/01_Arithmetic_Operations/c_fruit_store.py">/workspaces/PythonBatchNovDec2024/02_Basics/01_Arithmetic_Operations/c_fruit_store.py</a></td></tr></table>
+    <p><span class="code">Purpose:&nbsp;Fruit&nbsp;Store<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Items&nbsp;&nbsp;&nbsp;price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amount<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-----------------------------------------------------------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Apples&nbsp;&nbsp;&nbsp;12/piece&nbsp;&nbsp;&nbsp;5&nbsp;dozens&nbsp;=&nbsp;5&nbsp;*&nbsp;12&nbsp;=&nbsp;60&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;*&nbsp;60<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mangos&nbsp;&nbsp;&nbsp;34/piece&nbsp;&nbsp;&nbsp;3&nbsp;dozens&nbsp;=&nbsp;3&nbsp;*&nbsp;12&nbsp;=&nbsp;36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;34&nbsp;*&nbsp;36<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1944&nbsp;&nbsp;&nbsp;/-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-2&nbsp;%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;38.88/-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1905.12/-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+12.5&nbsp;%&nbsp;&nbsp;&nbsp;+238.14/-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2143.26/-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Algorithm<br>
+----------<br>
+Step&nbsp;0&nbsp;:&nbsp;declare&nbsp;the&nbsp;constants<br>
+Step&nbsp;1:&nbsp;&nbsp;Get&nbsp;the&nbsp;cost&nbsp;of&nbsp;fruits&nbsp;into&nbsp;variables<br>
+Step&nbsp;2:&nbsp;&nbsp;Get&nbsp;the&nbsp;quantity&nbsp;of&nbsp;fruits&nbsp;into&nbsp;variables.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute&nbsp;the&nbsp;end&nbsp;quantity,&nbsp;by&nbsp;substituting&nbsp;dozen&nbsp;value.<br>
+Step&nbsp;3:&nbsp;&nbsp;Compute&nbsp;the&nbsp;selling&nbsp;price&nbsp;to&nbsp;each&nbsp;item,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;add&nbsp;them<br>
+Step&nbsp;4:&nbsp;&nbsp;Compute&nbsp;the&nbsp;discount&nbsp;amount&nbsp;and&nbsp;subtract<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;the&nbsp;selling&nbsp;price,&nbsp;to&nbsp;create&nbsp;payable&nbsp;amount<br>
+Step&nbsp;5:&nbsp;&nbsp;Calculate&nbsp;GST&nbsp;amount&nbsp;and&nbsp;Add&nbsp;to&nbsp;payable&nbsp;amount,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;create&nbsp;billable&nbsp;amount</span></p>
+<p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>DISCOUNT</strong> = 0.02<br>
+<strong>DOZEN</strong> = 12<br>
+<strong>GST</strong> = 0.125<br>
+<strong>billable_amount</strong> = 2143.2599999999998<br>
+<strong>cost_of_apple</strong> = 12<br>
+<strong>cost_of_mango</strong> = 34<br>
+<strong>discount_amount</strong> = 38.88<br>
+<strong>gst_on_fruits</strong> = 238.14<br>
+<strong>payable_amount</strong> = 1905.12<br>
+<strong>qty_of_apples</strong> = 60<br>
+<strong>qty_of_mangos</strong> = 36<br>
+<strong>total_sp</strong> = 1944</td></tr></table>
+</body></html>
