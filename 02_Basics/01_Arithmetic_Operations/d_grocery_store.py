@@ -42,3 +42,51 @@ print("SP of Wheat  :", sp_of_wheat)
 
 total_sp = sp_of_rice + sp_of_wheat
 print("Total SP     :", total_sp)
+
+
+
+# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
+
+
+from datetime import datetime
+current_time = datetime.now()
+
+
+HOST = "cuddly-giggle"
+LINE_SPACE = 78
+HALF_LINE_SPACE = 39
+
+designer_str_01 = LINE_SPACE * '*'
+designer_str_02 = LINE_SPACE * '-'
+
+
+print(designer_str_01)
+print()
+print("TECHVISTA SUPER CENTER".center(LINE_SPACE,))
+print("ATLANTA, GA. 30033".center(LINE_SPACE,))
+print()
+print("RECEIPT".center(LINE_SPACE, "-"))
+print()
+print(designer_str_01)
+print(HOST.ljust(HALF_LINE_SPACE) + current_time.strftime(current_time.strftime("%Y-%m-%d %H:%M:%S")).rjust(HALF_LINE_SPACE))
+print(designer_str_02)
+print()
+print(("Quantity" + " X " + "ITEM").ljust(HALF_LINE_SPACE) + ("PRICE").rjust(HALF_LINE_SPACE))
+print()
+print((str(qty_of_rice) + " X " + "RICE").ljust(HALF_LINE_SPACE) + ("$"+str(sp_of_rice)).rjust(HALF_LINE_SPACE))
+print((str(qty_of_wheat) + " X " + "WHEAT").ljust(HALF_LINE_SPACE) + ("$"+str(sp_of_wheat)).rjust(HALF_LINE_SPACE))
+print(designer_str_02)
+print(designer_str_02)
+print(("TOTAL AMOUNT").ljust(HALF_LINE_SPACE) + ("$"+str(total_sp)).rjust(HALF_LINE_SPACE))
+print(("CASH").ljust(HALF_LINE_SPACE) + ("$"+str(total_sp)).rjust(HALF_LINE_SPACE))
+print(("CHANGE").ljust(HALF_LINE_SPACE) + ("$0").rjust(HALF_LINE_SPACE))
+print()
+print()
+print(("Transaction#").ljust(HALF_LINE_SPACE) + ("12012024").rjust(HALF_LINE_SPACE))
+print(designer_str_02)
+print()
+print("THANK YOU!!".center(LINE_SPACE, "*"))
+print()
+print()
+
