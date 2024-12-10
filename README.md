@@ -129,3 +129,29 @@ Class09
     pydoc
     Relational Operations
     Logical Operations
+
+Class10
+
+    Boolean Operations
+    Bitwise Operations
+    Identity Operations
+    Dual Memory management Strategy
+    range() function
+    Conditional Operations
+
+Class11
+
+    Structural Pattern Matching
+    Loops: for & while, break, continue, pass, sys.exit
+
+Class12
+
+    Walrus Operator
+    Exceptions Hierarchy
+    Different types of errors, error vs exception and exception groups
+    Handling single and multiple exceptions
+    raising exceptions
+    asserts
+    traceback
+    exception Groups
+    warnings
