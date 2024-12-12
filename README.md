@@ -155,3 +155,25 @@ Class12
     traceback
     exception Groups
     warnings
+
+Class13
+
+    Debugging
+    Importance of logical errors
+    Debugging with pydevd
+    Debugging with pdb, ipdb
+    breakpoint() function
+    PYTHONBREAKPOINT environment variable usage
+    post analyses of executed script
+
+Class14
+
+    Collections
+    Lists
+
+Class15
+
+    Copy Problem - shallow copy vs deepcopy
+    Tuples & namedtuples
+    Immutability & unpacking
+    Sets- attributes, operations
