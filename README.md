@@ -65,6 +65,40 @@ To create new branch
 
     git checkout -b <branchName>
 
+
+## Virtual Environment
+
+    Isolated environment 
+
+    why needed
+        - same system, multiple projects
+            - different python versions 
+            - same python verison, but differenet module versions
+
+    How to create Virtual Environment 
+        - Virtualenv
+        - venv
+        - pipenv
+        - poetry 
+        - uv
+
+    Using Virtualenv
+        
+        Install
+            pip install virtualenv
+        
+        create virtual environment
+            python -m virtualenv .venv
+        
+        activate virtual environment
+            linux
+                source .venv/bin/activate
+
+            windows
+                .venv/script/activate
+
+
+
 ## What I have learnt so far...
 
 Installation and Initialization of Git, GitHub, Codespace, Python
@@ -177,3 +211,73 @@ Class15
     Tuples & namedtuples
     Immutability & unpacking
     Sets- attributes, operations
+
+class16
+
+    fronzensets
+    Dictionaries
+        zip() function
+        workaround for switch case
+    Comprehensions
+    Working with Iterables - sum(), max(), min()
+
+class17
+
+    Functions
+    Functions with & without arguments, keyword arguments
+    Functions with Different return types and unpacking
+    Functions with with Default arguments
+    variadic functions : variable arguments and variable keyword arguments
+    Functions with keyword only arguments
+    Scoping: Global vs Local
+        call by reference
+        call by value
+
+class18
+
+    Partial Functions
+    Anonymous(Lambda) Functions
+    Higher order functions: map(), filter(), functool.reduce()
+    Recursions and recursions limit
+
+
+class19
+
+    inner functions
+    closures
+    Decorator Design Pattern
+    Necessity
+    function Decorator
+    Practical Examples
+    syntactic sugar for decorators
+    multiple decorators on same function
+    decorators with arguments
+    functools - wrap, lru_cache
+    class decorator
+
+
+class20
+
+    Iterables, Iterators, Generators and co-routines
+    Iterables
+        different ways of extracting values from iterables
+    Iterators
+        iter() protocol
+        itertools module
+
+class21
+
+    Generators
+        yield vs return
+        function vs Generator
+        Generator pipelining
+        Generator Expression
+
+class22 
+
+    Coroutine
+        Generator vs Coroutine
+        coroutine pipelining
+    Modules
+        Basic Modules
+            - math, sys, argparse
