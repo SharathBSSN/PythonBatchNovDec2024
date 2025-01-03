@@ -293,3 +293,13 @@ class24
         - time, datetime, pytz, timeit, calendar
     others
         - random, collections, atexit, contextlib, base64
+
+class25 
+
+    creating user-defined module and package
+        packaging
+        creating the wheel files, tar files
+        publishing with twine
+        egg files
+    File Operations
+        flat files
