@@ -1,0 +1,8 @@
+sno/data/delimiter_used
+1/data_write/frwd_slash
+2/data_write/frwd_slash
+3/data_write/frwd_slash
+4:data_append:colan
+5:data_append:colan
+6;data_append;semi-colan
+7;data_append;semi-colan
