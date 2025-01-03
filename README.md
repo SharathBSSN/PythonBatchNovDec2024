@@ -42,7 +42,7 @@ To push the commited changes
 
     git push origin <sourceBranch>
 
-        Ex: Pushing changes from class01 -> mail
+        Ex: Pushing changes from class01 -> main
         git push origin class01
 
 ### Daily 
@@ -96,6 +96,22 @@ To create new branch
 
             windows
                 .venv/script/activate
+
+        Using Poetry
+
+            Install
+                pip install -U pip
+                pip install poetry
+
+            Initialize
+                python -m poetry init
+
+            Create a virtual env
+                python -m poetry shell
+
+            Add Dependencies
+                pip install poetry
+                poetry add pandas    
 
 
 
@@ -303,3 +319,20 @@ class25
         egg files
     File Operations
         flat files
+
+class26
+
+    Non-flat files 
+        pickle 
+        shelve 
+        xml 
+        csv
+
+class26 
+
+        windows local setup
+        poetry installation
+        Troubleshooting experince
+        csv
+        dat
+        tsv
